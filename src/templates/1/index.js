@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Heading from "./components/Heading";
 import ProfileCard from "./components/ProfileCard";
 import Link from "./components/Link";
@@ -8,6 +8,7 @@ import ItemHeader from "./components/ItemHeader";
 import Timeline from "./components/Timeline";
 import Item from "./components/Item";
 import Skill from "./components/Skill";
+import useThemeDetector from "../../useThemeDetector";
 
 const profileText = "Junior level computer programmer currently completing the final year of a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts.";
 
@@ -21,7 +22,7 @@ const profileText = "Junior level computer programmer currently completing the f
 const contacts = [
     {
         icon: "Github",
-        url: "https://github.com/JChris246",
+        url: "JChris246",
         text: "https://github.com/JChris246",
     }, {
         icon: "Phone",
@@ -85,9 +86,18 @@ const hc = [
 ];
 
 const Root = () => {
+    const isDarkTheme = useThemeDetector();
+
+    useEffect(() => {
+        const body = document.getElementsByTagName("body")[0];
+        isDarkTheme ?
+            body.classList.replace("light", "dark")
+            : body.classList.replace("dark", "light");
+    }, [isDarkTheme]);
+
     return (
         <div className="flex flex-col md:flex-row px-0">
-            <div className="md:w-1/3 bg-blue-700">
+            <div className="md:w-1/3 bg-blue-700 dark:bg-blue-800">
                 <Heading firstName="Christopher" lastName="King" title="Computer Science Student"/>
                 <ProfileCard profileText={profileText} photo={photo}/>
                 {
@@ -99,22 +109,22 @@ const Root = () => {
                     />)
                 }
             </div>
-            <div className="md:w-2/3 bg-white p-4">
+            <div className="md:w-2/3 bg-white dark:bg-gray-900 p-4">
                 <div className="md:ml-5 ml-1">
                     <ItemHeader text="Education"/>
                     <div className="ml-2 md:ml-4">
                         <Timeline text="2018 - present"/>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500">
-                            <span className="font-bold text-gray-800 block">University of the West Indies</span>
-                            <span className="text-gray-600 font-normal block">BSC. Science Computer Science [Double] – 3.83</span>
+                            <span className="font-bold text-gray-800 dark:text-gray-50 block">University of the West Indies</span>
+                            <span className="text-gray-600 dark:text-gray-400 font-normal block">BSC. Science Computer Science [Double] – 3.83</span>
                         </div>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500">
-                            <span className="font-bold text-gray-800 block mt-4 mb-2">Some courses completed at present</span>
+                            <span className="font-bold text-gray-800 dark:text-gray-50 block mt-4 mb-2">Some courses completed at present</span>
                             <ul>
                                 {
                                     courses.map((course, i) =>
                                         <li key={i}
-                                            className="text-gray-600 font-normal my-1">
+                                            className="text-gray-600 dark:text-gray-400 font-normal my-1">
                                             {course}
                                         </li>)
                                 }
@@ -125,12 +135,12 @@ const Root = () => {
                     <div className="ml-2 md:ml-4">
                         <Timeline text="2011 - 2018"/>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500">
-                            <span className="font-bold text-gray-800 block">Harrison College</span>
+                            <span className="font-bold text-gray-800 dark:text-gray-50 block">Harrison College</span>
                             <ul className="mt-2">
                                 {
                                     hc.map((item, i) =>
                                         <li key={i}
-                                            className="text-gray-600 font-normal my-1">
+                                            className="text-gray-600 dark:text-gray-400 font-normal my-1">
                                             {item}
                                         </li>)
                                 }
@@ -163,6 +173,7 @@ const Root = () => {
                                     iconName={item.icon}
                                     text={item.text}
                                     color={item.color}
+                                    dark={isDarkTheme}
                                 /> )
                         }
                     </div>
