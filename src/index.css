@@ -47,3 +47,9 @@ code {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+.cert_grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
