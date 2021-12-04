@@ -90,9 +90,8 @@ const CV = ({ isDarkTheme }) => {
                 <ProfileCard profileText={profileText} photo={photo}/>
                 {
                     links.map((item, i) =>
-                        item?.wrap ? <NavLink to={item.wrap}>
+                        item?.wrap ? <NavLink key={i} to={item.wrap}>
                             <Link
-                                key={i}
                                 iconName={item.icon}
                                 text={item.text}
                                 url={item?.url}
