@@ -11,7 +11,7 @@ import Timeline from "./components/Timeline";
 import Item from "./components/Item";
 import Skill from "./components/Skill";
 
-const profileText = "Junior level computer programmer currently completing the final year of a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts.";
+const profileText = "Junior level computer programmer currently completing the final year of a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts. Big fan of Linux.";
 
 const links = [
     {
