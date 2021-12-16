@@ -11,7 +11,7 @@ import Timeline from "./components/Timeline";
 import Item from "./components/Item";
 import Skill from "./components/Skill";
 
-const profileText = "Junior level computer programmer currently completing the final year of a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts. Big fan of Linux.";
+const profileText = "Junior level web developer currently completing the final year of a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts. Big fan of Linux.";
 
 const links = [
     {
@@ -86,7 +86,7 @@ const CV = ({ isDarkTheme }) => {
     return (
         <div className="flex flex-col md:flex-row px-0">
             <div className="md:w-1/3 bg-blue-700 dark:bg-blue-800">
-                <Heading firstName="Christopher" lastName="King" title="Computer Science Student"/>
+                <Heading firstName="Christopher" lastName="King" title="Junior Web Developer"/>
                 <ProfileCard profileText={profileText} photo={photo}/>
                 {
                     links.map((item, i) =>

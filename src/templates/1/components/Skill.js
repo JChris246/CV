@@ -8,7 +8,7 @@ const Skill = ({ iconName, text, color="currentColor", dark }) => {
             <div className="mx-auto max-w-max mb-2">
                 <Icon width="70" height="70" color={color}/>
             </div>
-            <span className="text-gray-600 text-center block">{text}</span>
+            <span className="dark:text-gray-200 text-gray-600 text-center block">{text}</span>
         </div>
     );
 };
