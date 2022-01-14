@@ -11,7 +11,7 @@ import Timeline from "./components/Timeline";
 import Item from "./components/Item";
 import Skill from "./components/Skill";
 
-const profileText = "Junior level web developer currently completing the final year of a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts. Big fan of Linux.";
+const profileText = "Junior level web developer, recently completed a Computer Science double major. Strong technical and interpersonal skills. Adaptable and creative which strengthens openness to new ideas and concepts. Big fan of Linux.";
 
 const links = [
     {
@@ -113,7 +113,7 @@ const CV = ({ isDarkTheme }) => {
                         <Timeline text="2018 - present"/>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500 dark:border-blue-600">
                             <span className="font-bold text-gray-800 dark:text-gray-50 block">University of the West Indies</span>
-                            <span className="text-gray-600 dark:text-gray-400 font-normal block">BSC. Science Computer Science [Double] – 3.83</span>
+                            <span className="text-gray-600 dark:text-gray-400 font-normal block">BSC. Science Computer Science [Double] – 3.82</span>
                         </div>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500 dark:border-blue-600">
                             <span className="font-bold text-gray-800 dark:text-gray-50 block mt-4 mb-2">Some courses completed at present</span>
