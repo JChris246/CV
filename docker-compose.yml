@@ -1,0 +1,11 @@
+version "3.1":
+
+services:
+  cv_page:
+    image: cv_page
+    container_name: cv_page
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:80

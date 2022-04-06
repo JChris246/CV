@@ -3,9 +3,9 @@ FROM node:14.18.1-alpine as buildStage
 RUN mkdir -p /home/webapp
 WORKDIR /home/webapp
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 
-RUN npm ci --production
+RUN npm install
 
 COPY . ./
 RUN npm run build
