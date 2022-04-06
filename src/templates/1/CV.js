@@ -64,6 +64,9 @@ const skills = [
     }, {
         icon: "ReactIcon",
         text: "React"
+    }, {
+        icon: "Docker",
+        text: "Docker"
     }
 ];
 
