@@ -28,7 +28,7 @@ const certificates = [
         link: "https://www.coursera.org/verify/5HF46EQE9WS7",
         img: images["Coursera 5HF46EQE9WS7"]
     }, {
-        link: "https://chrispi6fe.duckdns.org/chris_ecv/assets/UC-U07SO2VH.pdf",
+        link: "",
         img: images["UC-U07SO2VH"]
     }
 ];

@@ -19,7 +19,7 @@ const links = [
         text: "chris.401@live.com"
     }, {
         icon: "Phone",
-        text: "(246) 847-4121",
+        text: "🇧🇧 (246) 847-4121 / 🇺🇸 (206) 403-5960",
     }, {
         icon: "Github",
         url: "https://github.com/JChris246",
@@ -67,6 +67,12 @@ const skills = [
     }, {
         icon: "Docker",
         text: "Docker"
+    }, {
+        icon: "Go",
+        text: "GO"
+    }, {
+        icon: "Spring",
+        text: "Spring"
     }
 ];
 
@@ -113,10 +119,10 @@ const CV = ({ isDarkTheme }) => {
                 <div className="md:ml-5 ml-1">
                     <ItemHeader text="Education"/>
                     <div className="ml-2 md:ml-4">
-                        <Timeline text="2018 - present"/>
+                        <Timeline text="2018 - 2022"/>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500 dark:border-blue-600">
                             <span className="font-bold text-gray-800 dark:text-gray-50 block">University of the West Indies</span>
-                            <span className="text-gray-600 dark:text-gray-400 font-normal block">BSC. Science Computer Science [Double] – 3.82</span>
+                            <a href="https://1drv.ms/i/s!AqgyohKEbXZb_3hVjuYxXbubnbml?e=q33iYT" className="text-gray-600 dark:text-gray-400 font-normal block">BSC. Science Computer Science [Double] – 4.06</a>
                         </div>
                         <div className="mx-1 px-4 mb-4 border-l-2 border-solid border-blue-500 dark:border-blue-600">
                             <span className="font-bold text-gray-800 dark:text-gray-50 block mt-4 mb-2">Some courses completed at present</span>
@@ -152,9 +158,15 @@ const CV = ({ isDarkTheme }) => {
                 <div className="md:ml-5 ml-1">
                     <ItemHeader text="Experience"/>
                     <Item
-                        duration="2021 - 2021"
-                        heading="Technical Assistant - WebStart"
-                        description="Commited to actively contributing towards the successful execution of the Mental Health Hackathon by providing open-source technical demos, source code and tutorials to help participants in learning web development."
+                        duration="2022 - 2023"
+                        heading="Full Stack Developer - First Caribbean International Bank"
+                        description="Integrate the application with all required systems and services. Provide clean and easy way to use API for the frontend part of the system. Bare the full responsibility for the application functionality, performance and
+                            scalability. Write clean modern APIs, that integrate with legacy systems and work with databases. Design and develop the business logic and backend systems of the product. Work closely with frontend developers to design and develop functional, performing and complete APIs.
+                            Decipher existing companies software systems and be able to hook in application to applicable data sources. Write both unit and integration tests, and develop automation tools for daily tasks. Develop high quality, well documented, and efficient code. Challenge ideas and opinions to avoid pitfalls and inefficient solutions."
+                        extraContent={() => <>
+                            <br/>
+                            <span className="text-gray-600 dark:text-gray-400 font-normal block">Technologies included: Java, Spring, JS, TS, React, Tailwindcss, ChakraUI, Cosmos DB, Docker, Git, Azure Devops Services and Tools.</span>
+                        </>}
                     />
                     <Item
                         duration="2020 - 2021"
