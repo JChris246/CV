@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.60a04b14.chunk.css",
+    "main.js": "./static/js/main.3a0fb528.chunk.js",
+    "main.js.map": "./static/js/main.3a0fb528.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e168aea4.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e168aea4.js.map",
+    "static/js/2.e0d8cbec.chunk.js": "./static/js/2.e0d8cbec.chunk.js",
+    "static/js/2.e0d8cbec.chunk.js.map": "./static/js/2.e0d8cbec.chunk.js.map",
+    "static/js/3.ac5e50d6.chunk.js": "./static/js/3.ac5e50d6.chunk.js",
+    "static/js/3.ac5e50d6.chunk.js.map": "./static/js/3.ac5e50d6.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.60a04b14.chunk.css.map": "./static/css/main.60a04b14.chunk.css.map",
+    "static/js/2.e0d8cbec.chunk.js.LICENSE.txt": "./static/js/2.e0d8cbec.chunk.js.LICENSE.txt",
+    "static/media/Coursera 5HF46EQE9WS7.png": "./static/media/Coursera 5HF46EQE9WS7.82ea4d09.png",
+    "static/media/Coursera 6EEZDDYURZUJ.png": "./static/media/Coursera 6EEZDDYURZUJ.2726a428.png",
+    "static/media/Coursera GR9ZLBBKLJSZ.png": "./static/media/Coursera GR9ZLBBKLJSZ.46b44716.png",
+    "static/media/Coursera VDVRBRMTMT7J.png": "./static/media/Coursera VDVRBRMTMT7J.fb0c2ca9.png",
+    "static/media/Coursera YJLMNWSM4CTC.png": "./static/media/Coursera YJLMNWSM4CTC.4783c61a.png",
+    "static/media/IMG-20190902-WA0003.jpg": "./static/media/IMG-20190902-WA0003.decdef24.jpg",
+    "static/media/UC-U07SO2VH.png": "./static/media/UC-U07SO2VH.9285526f.png",
+    "static/media/degree_cert.jpg": "./static/media/degree_cert.1b8f13b6.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e168aea4.js",
+    "static/js/2.e0d8cbec.chunk.js",
+    "static/css/main.60a04b14.chunk.css",
+    "static/js/main.3a0fb528.chunk.js"
+  ]
+}
